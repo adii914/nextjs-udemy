@@ -1,5 +1,5 @@
 import { Layout } from "../components/Layout";
-import { Post } from "../components/Post";
+import Post from "../components/Post";
 import { getAllPostData } from '../lib/posts';
 
 export const getStaticProps = async () => {
@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
   }
 };
 
-export default function Blog ({ posts }) {
+const Blog = ({ posts }) => {
   return (
     <Layout title="Blog">
       <ul className="m-10">
@@ -18,4 +18,6 @@ export default function Blog ({ posts }) {
     </Layout>
   )
 };
+
+export default Blog;
 
