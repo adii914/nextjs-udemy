@@ -18,7 +18,7 @@ export const getStaticProps = async ({params}) => {
   }
 };
 
-const Post = ({post}) => {
+export default function Post ({post}) {
   if(!post) {
     return <div>Loading...</div>;
   }
@@ -45,5 +45,3 @@ const Post = ({post}) => {
     </Layout>
   );
 };
-
-export default Post;

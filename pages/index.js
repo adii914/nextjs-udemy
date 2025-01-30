@@ -3,7 +3,9 @@ import { Layout } from "../components/Layout";
 export default function Home() {
   return (
     <Layout title="Home">
-      <p className='text-red-500 text-4xl'>Hello!</p>
+      <p className='text-4xl'>
+        Welcome to <span className="text-black font-bold">Nextjs</span> Project
+      </p>
       </Layout>
   )
 };

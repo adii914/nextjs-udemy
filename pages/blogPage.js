@@ -9,7 +9,7 @@ export const getStaticProps = async () => {
   }
 };
 
-const Blog = ({ posts }) => {
+export default function Blog ({ posts }) {
   return (
     <Layout title="Blog">
       <ul className="m-10">
@@ -18,6 +18,4 @@ const Blog = ({ posts }) => {
     </Layout>
   )
 };
-
-export default Blog;
 
